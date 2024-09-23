@@ -1,0 +1,78 @@
+@use 'helpers/colors' as colors;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+div#app.en-us {
+    font-family: 'Montserrat';
+}
+
+div#app.ar-eg {
+    font-family: 'Cairo';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    border: 0;
+    &[type='submit'] {
+        cursor: pointer;
+    }
+    &[type='time'],
+    &[type='date'] {
+        cursor: pointer;
+    }
+    &:not([type='checkbox']) {
+        width: 100%;
+    }
+    &[type='checkbox'] {
+        cursor: pointer;
+    }
+}
+
+textarea {
+    width: 100%;
+    border: 0;
+    margin: 0;
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: colors.$color-dark;
+    border-radius: 10px;
+}
+
+// ::-webkit-scrollbar-button {
+//     background: transparent;
+// }
+
+/* Button on hover */

@@ -1,0 +1,16 @@
+// Fonts
+$fonts: "~/assets/fonts";
+$Montserrat: "Montserrat-Regular.ttf";
+$Cairo: "Cairo-VariableFont_slnt,wght.ttf";
+
+// Montserrat
+@font-face {
+    src: url("#{$fonts}/#{$Montserrat}") format('truetype');
+    font-family: "Montserrat";
+}
+
+// Cairo
+@font-face {
+    src: url("#{$fonts}/#{$Cairo}") format('truetype');
+    font-family: "Cairo";
+}
